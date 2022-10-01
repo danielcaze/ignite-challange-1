@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    height: 5.4rem;
+}
+
+.input {
+    height: 100%;
+    padding: 1.6rem;
+    background: var(--gray-500);
+
+    flex: 1;
+
+    border-radius: 8px;
+
+    color: var(--gray-100);
+    border: 1px solid var(--gray-700);
+    font-size: var(--font-lg);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    padding: 1.6rem;
+    border-radius: 8px;
+    border: 0;
+
+    background-color: var(--product-blue-dark);
+    color: var(--gray-100);
+
+    cursor: pointer;
+    font-size: var(--font-md);
+    font-weight: 700;
+ 
+    transition: all 0.2s;
+}
+
+.button svg > * {
+    color: var(--gray-100);
+     transition: all 0.2s;;
+}
+
+.button:hover {
+    background-color: var(--product-blue);
+}
+
+.button:hover,
+.button:hover svg > *
+ {
+    color: var(--gray-700);
+}
+
+.button:active {
+    background-color: var(--product-blue-dark);
+}

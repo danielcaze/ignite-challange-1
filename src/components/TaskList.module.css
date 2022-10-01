@@ -1,0 +1,74 @@
+.content { 
+    margin-top: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header div p{
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.header div span {
+    padding: 0.2rem 0.8rem;
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.blue {
+    color: var(--product-blue);
+}
+
+.purple {
+    color: var(--product-purple);
+}
+
+.background {
+    background: var(--gray-400);
+    padding-top: 0.2rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+    overflow: hidden;
+}
+
+.tasklist,
+.tasklist_empty {
+    background-color: var(--gray-600);
+    border-radius: 0.7rem 0.7rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasklist {
+    gap: 1.2rem;
+}
+
+.tasklist_empty{
+    gap: 1.6rem;
+
+    font-size: 1.6rem;
+}
+
+.tasklist_empty svg {
+    margin-top: 6.4rem;
+}
+
+.tasklist_empty div p:first-child {
+    font-weight: 700;  
+}

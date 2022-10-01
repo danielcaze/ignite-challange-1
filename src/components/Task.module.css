@@ -1,0 +1,95 @@
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+    margin-top: -0.2rem;
+
+    width: 100%;
+    padding: 1.6rem;
+    
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 0.8rem;
+}
+
+.content .checkbox {
+    position: relative;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+.content .checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.content .checkbox input[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+
+    top: 0rem;
+    left: 0rem;
+
+    height: 1.4rem;
+    width: 1.4rem;
+
+    border-radius: 50%;
+    border: 2px solid var(--product-blue);
+}
+
+.content .checkbox input[type="checkbox"]:checked + label::before{
+    border-color: var(--product-purple);
+    background: var(--product-purple);
+}
+
+.content .checkbox input[type="checkbox"]:checked + label svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content .checkbox input[type="checkbox"]:checked + label svg > * {
+    color: var(--gray-100);
+}
+
+.content div label,
+.icons svg {
+    cursor: pointer;
+}
+
+.content p {
+    flex: 1;
+
+    max-width: 626px;
+    overflow-wrap: break-word;
+
+    color: var(--gray-100);
+    font-size: 1.4rem;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons svg {
+    margin-left: auto;
+}
+
+.icons svg > *{
+    color: var(--gray-100);
+    transition: color 0.2s;
+}
+
+.icons svg:hover > *{
+    color: var(--gray-300);
+}
+
+div.task_completed {
+    border-color: var(--gray-500);
+}
+
+.task_completed p{
+    color: var(--gray-300);
+    text-decoration: line-through;
+}

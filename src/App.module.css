@@ -1,0 +1,10 @@
+.main {
+   background: var(--gray-600);
+   height: calc(100vh - var(--header-height));
+}
+
+.content {
+    margin-inline: auto;
+    max-width: var(--content-width);
+    padding-top: 1rem;
+}

@@ -1,0 +1,19 @@
+.header {
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--gray-700);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.header > div {
+    position: absolute;
+    top: 17rem;
+    left: 49%;
+    transform: translateX(-49%);
+    width: min(var(--content-width), 100%);
+}
